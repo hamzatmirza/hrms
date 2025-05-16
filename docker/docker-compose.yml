@@ -18,6 +18,9 @@ services:
 
   frappe:
     image: frappe/bench:latest
+    ports:
+      - 8022:8000
+      - 9022:9000
     volumes:
       - .:/workspace
 
